@@ -7,10 +7,10 @@
 
 ### Conversii de formate
 
-- **Din Shapefile în GeoPackage**
+- **Din Shapefile în GeoPackage**  
 `ogr2ogr -f GPKG nume.gpkg nume.shp`
 
-- **Pentru a converti în masă fișiere de un singur format într-un GeoPackage nou**
+- **Pentru a converti în masă fișiere de un singur format într-un GeoPackage nou**  
 `ogr2ogr -f GPKG nume.gpkg /calea/către/dosar`
 
 
@@ -33,5 +33,5 @@ Prezintă un sumar al informațiilor referitoare la un strat (nume, număr de en
 
 `ogrinfo -so <path/to/file.gpkg> <layer_name>`
 
--so (summary only) = sinteză a informațiilor  
--al (list all features) = pentru afișarea tuturor entităților din strat  
+`-so` (summary only) = sinteză a informațiilor  
+`-al` (list all features) = pentru afișarea tuturor entităților din strat  
