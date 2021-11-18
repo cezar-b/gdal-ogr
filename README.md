@@ -10,6 +10,9 @@
 - **Din Shapefile în GeoPackage**  
 `ogr2ogr -f GPKG nume.gpkg nume.shp`
 
+- **Din Shapefile în GeoJSON**  
+`ogr2ogr -f GeoJSON nume.geojson nume.shp`
+
 - **Pentru a converti în masă fișiere de un singur format într-un GeoPackage nou**  
 `ogr2ogr -f GPKG nume.gpkg /calea/către/dosar`
 
@@ -21,6 +24,11 @@
 - Pentru a suprascrise un strat deja existent: `-overwrite`.
 
 - Pentru a introduce într-un GeoPackage doar anumite elemente vectoriale, se poate realiza o interogare prin dialect SQLite, folosind comanda `-sql` și `-nln` pentru un nou nume; pentru a defini dialectul de SQL folosit, înainte de -sql: `-dialect sqlite`; util inclusiv dacă generăm un nou GeoPackage cu ajutorul terminalului, dacă stratul final e invalid; exemplu: `ogr2ogr -update -f GPKG test.gpkg judete_1930.shp -nln nume_nou -sql "SELECT * FROM rohgis_judete_1930 WHERE Nume LIKE 'B%'"`
+
+### Subseturi
+
+- **Subset bazat pe interogare**  
+`ogr2ogr -where 'denumire LIKE "R%"' subset_nume.shp nume.shp`
 
 ### Reproiectări
 
