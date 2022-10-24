@@ -43,3 +43,37 @@ Prezintă un sumar al informațiilor referitoare la un strat (nume, număr de en
 
 `-so` (summary only) = sinteză a informațiilor  
 `-al` (list all features) = pentru afișarea tuturor entităților din strat  
+
+## gdalinfo
+
+Prezintă un sumar al informațiilor referitoare la un raster (nume, tip, rezoluție, număr de benzi, sistem de coordonate etc).  
+
+`gdalinfo raster.tif`
+
+## gdalwarp
+
+Utilitar de proiectare, reproiectare, georeferențiere și mozaicare a datelor raster.   
+Sintaxa minimală pentru proiectare (reproiectare) este:
+
+`gdalwarp intrare.tif rezultat.tif -t_srs EPSG:3844`
+
+## gdaldem
+
+Utilitar de analiză pentru modele numerice de teren. Conține mai multe moduri ce corespund cu unii indicatori morfometrici.
+
+### Pante (Slope)
+
+`gdaldem <mod> intrare.tif rezultat.tif`
+
+Unde <mod> poate fi:  
+- `hillshade` – generează un model de umbrire pentru un raster cu informație altitudinală;
+- `slope` – generează un model de pante pentru un raster cu informație altitudinală;
+- `aspect` – generează un model de expunere a versanților pentru un raster cu informație altitudinală;
+- `color-relief` – generează un model hipsometric pentru un raster cu informație altitudinală;
+– `TRI` – generează un model ce cuprinde indicele de rugozitate al terenului pentru un raster cu informație altitudinală;
+– `TPI` – generează un model ce cuprinde indicele poziției topografice pentru un raster cu informație altitudinală;
+– `roughness` – generează un model de rugozitate pentru un raster cu informație altitudinală
+
+
+
+
