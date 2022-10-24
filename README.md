@@ -60,8 +60,7 @@ Sintaxa minimală pentru proiectare (reproiectare) este:
 ## gdaldem
 
 Utilitar de analiză pentru modele numerice de teren. Conține mai multe moduri ce corespund cu unii indicatori morfometrici.
-
-### Pante (Slope)
+Sintaxa de bază este următoarea:  
 
 `gdaldem <mod> intrare.tif rezultat.tif`
 
