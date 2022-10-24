@@ -64,14 +64,14 @@ Sintaxa de bază este următoarea:
 
 `gdaldem <mod> intrare.tif rezultat.tif`
 
-Unde <mod> poate fi:  
-- `hillshade` – generează un model de umbrire pentru un raster cu informație altitudinală;
-- `slope` – generează un model de pante pentru un raster cu informație altitudinală;
-- `aspect` – generează un model de expunere a versanților pentru un raster cu informație altitudinală;
-- `color-relief` – generează un model hipsometric pentru un raster cu informație altitudinală;
-– `TRI` – generează un model ce cuprinde indicele de rugozitate al terenului pentru un raster cu informație altitudinală;
-– `TPI` – generează un model ce cuprinde indicele poziției topografice pentru un raster cu informație altitudinală;
-– `roughness` – generează un model de rugozitate pentru un raster cu informație altitudinală
+Unde `<mod>` poate fi:  
+- `hillshade` – generează un model de umbrire pentru un raster cu informație altitudinală;  
+- `slope` – generează un model de pante pentru un raster cu informație altitudinală;  
+- `aspect` – generează un model de expunere a versanților pentru un raster cu informație altitudinală;  
+- `color-relief` – generează un model hipsometric pentru un raster cu informație altitudinală;  
+- `TRI` – generează un model ce cuprinde indicele de rugozitate al terenului pentru un raster cu informație altitudinală;  
+- `TPI` – generează un model ce cuprinde indicele poziției topografice pentru un raster cu informație altitudinală;  
+- `roughness` – generează un model de rugozitate pentru un raster cu informație altitudinală.
 
 
 
